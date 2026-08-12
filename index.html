@@ -1,91 +1,293 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Karina Rojo Beauty Salón | Exclusividad y Tendencia en Culiacán</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-</head>
-<body>
-    <div class="background-overlay"></div>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
-    <header class="main-header">
-        <span class="subtitle">ALTA PELUQUERÍA & ESTÉTICA INTEGRAL</span>
-        <h1>Karina Rojo</h1>
-        <span class="tagline">Beauty Salón</span>
-        <p class="intro-text">Resaltamos tu belleza natural con técnicas de vanguardia en un ambiente sofisticado diseñado exclusivamente para ti.</p>
-        
-        <!-- Botón de Llamado a la Acción Principal (CTA) -->
-        <a href="https://wa.me/526671750763?text=Hola%20Karina,%20me%20gustar%C3%ADa%20agendar%20una%20cita%20o%20conocer%20m%C3%A1s%20sobre%20sus%20servicios." class="cta-button" target="_blank">
-            <i class="fa-brands fa-whatsapp"></i> Reserva tu cita por WhatsApp
-        </a>
-    </header>
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow-x: hidden;
+    background-color: #050505;
+}
 
-    <main class="content-container">
-        
-        <!-- Sección de Servicios Estrella -->
-        <section class="services-card">
-            <h2>Nuestras Especialidades</h2>
-            <div class="services-grid">
-                <div class="service-item">
-                    <i class="fa-solid fa-wand-magic-sparkles"></i>
-                    <h3>Colorimetría Avanzada</h3>
-                    <p>Balayage, Babylights y efectos de color personalizados con productos de gama alta.</p>
-                </div>
-                <div class="service-item">
-                    <i class="fa-solid fa-scissors"></i>
-                    <h3>Cortes & Estilo</h3>
-                    <p>Diseño de imagen adaptado a la forma de tu rostro y últimas tendencias globales.</p>
-                </div>
-                <div class="service-item">
-                    <i class="fa-solid fa-spray-can-sparkles"></i>
-                    <h3>Tratamientos Capilares</h3>
-                    <p>Hidratación profunda, nutrición y reconstrucción para un cabello sedoso y brillante.</p>
-                </div>
-                <div class="service-item">
-                    <i class="fa-solid fa-heart-pulse"></i>
-                    <h3>Maquillaje & Peinado</h3>
-                    <p>Luce radiante en tus eventos sociales, bodas y ocasiones especiales.</p>
-                </div>
-            </div>
-        </section>
+/* Fondo con imagen y velo de alta gama */
+.background-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(5, 5, 5, 0.78), rgba(5, 5, 5, 0.92)), url('imagen-mujer.png');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
 
-        <!-- Tarjeta de Ubicación y Mensaje Emocional -->
-        <section class="glass-card">
-            <h2>Visítanos y déjate consentir</h2>
-            <p class="card-subtitle-text">Regálate ese momento de amor propio que tanto mereces en un espacio creado para tu bienestar.</p>
-            
-            <div class="info-item">
-                <i class="fa-solid fa-location-dot location-icon"></i> 
-                <a href="https://www.google.com/maps/place/Karina+Rojo+Salon/@24.8212885,-107.394681,17z/data=!3m1!4b1!4m6!3m5!1s0x86bcda1b42893161:0x610025209d2efbc0!8m2!3d24.8212885!4d-107.3921007!16s%2Fg%2F11bwf7y9jp?entry=ttu" target="_blank">
-                Juan de la barrera 1587, Gabriel Leyva, Culiacán, Sinaloa 80030</a>
-            </div>
-            
-            <div class="info-item">
-                <i class="fa-solid fa-phone phone-icon"></i> 
-                <a href="tel:+526671750763">+52 667 175 0763 (Llamada directa)</a>
-            </div>
-            
-            <div class="social-container">
-                <a href="https://www.facebook.com/profile.php?id=100063701947159#" target="_blank" class="social-icon fb" title="Facebook">
-                    <i class="fa-brands fa-facebook-f"></i>
-                </a>
-                <a href="https://www.instagram.com/karyroz/" target="_blank" class="social-icon ig" title="Instagram">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-            </div>
-        </section>
-    </main>
+/* Encabezado Principal / Hero Section */
+.main-header {
+    text-align: center;
+    padding: 70px 20px 40px;
+    max-width: 900px;
+    z-index: 1;
+}
 
-    <!-- Botón flotante persistente de WhatsApp -->
-    <a href="https://wa.me/526671750763?text=Hola,%20quisiera%20más%20información%20sobre%20sus%20servicios." class="whatsapp-float" target="_blank" title="Chatea con nosotros">
-        <i class="fa-brands fa-whatsapp"></i>
-    </a>
+.subtitle {
+    font-size: 0.95rem;
+    letter-spacing: 6px;
+    color: #d4af37;
+    text-transform: uppercase;
+    font-weight: 600;
+}
 
-    <footer>
-        <p>&copy; 2026 Karina Rojo Beauty Salón. Todos los derechos reservados.</p>
-    </footer>
-</body>
-</html>
+/* Título principal con proporciones imponentes y elegantes */
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 4.8rem;
+    margin: 12px 0 0;
+    letter-spacing: 3px;
+    color: #ffffff;
+    line-height: 1.1;
+    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.tagline {
+    font-size: 1.25rem;
+    letter-spacing: 10px;
+    color: #d1d1d1;
+    text-transform: uppercase;
+    display: block;
+    margin: 10px 0 25px;
+    font-weight: 300;
+}
+
+.intro-text {
+    font-size: 1.15rem;
+    color: #cccccc;
+    line-height: 1.7;
+    margin-bottom: 35px;
+    font-weight: 300;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Botón de Llamado a la Acción (CTA) Principal */
+.cta-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    background: linear-gradient(135deg, #25d366, #1ebe5d);
+    color: white;
+    padding: 18px 36px;
+    font-size: 1.15rem;
+    font-weight: 600;
+    border-radius: 50px;
+    text-decoration: none;
+    box-shadow: 0 10px 30px rgba(37, 211, 102, 0.4);
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 35px rgba(37, 211, 102, 0.6);
+    background: linear-gradient(135deg, #2ecc71, #25d366);
+}
+
+.cta-button i {
+    font-size: 1.5rem;
+}
+
+/* Contenedor General */
+.content-container {
+    width: 100%;
+    max-width: 900px;
+    padding: 0 20px 50px;
+    z-index: 1;
+}
+
+/* Tarjetas de Estilo Cristal Esmerilado */
+.glass-card, .services-card {
+    background: rgba(18, 18, 18, 0.75);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border: 1px solid rgba(212, 175, 55, 0.25);
+    padding: 45px 35px;
+    border-radius: 24px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7);
+    margin-bottom: 35px;
+}
+
+/* Sección de Servicios en Grid */
+.services-card h2, .glass-card h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.3rem;
+    color: #d4af37;
+    text-align: center;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+.card-subtitle-text {
+    text-align: center;
+    color: #b5b5b5;
+    font-size: 1.05rem;
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.service-item {
+    background: rgba(255, 255, 255, 0.03);
+    padding: 30px 25px;
+    border-radius: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.service-item:hover {
+    transform: translateY(-5px);
+    border-color: rgba(212, 175, 55, 0.4);
+}
+
+.service-item i {
+    font-size: 2rem;
+    color: #d4af37;
+    margin-bottom: 15px;
+}
+
+.service-item h3 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.service-item p {
+    font-size: 0.95rem;
+    color: #b0b0b0;
+    line-height: 1.6;
+}
+
+/* Elementos de Contacto e Info */
+.info-item {
+    margin: 22px 0;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    text-align: center;
+}
+
+/* Colores personalizados solicitados */
+.location-icon {
+    color: #ff4d4d !important; /* Rojo elegante */
+    font-size: 1.5rem;
+}
+
+.phone-icon {
+    color: #25d366 !important; /* Verde */
+    font-size: 1.5rem;
+}
+
+.info-item a {
+    color: #e0e0e0;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.info-item a:hover {
+    color: #d4af37;
+}
+
+/* Redes Sociales */
+.social-container {
+    display: flex;
+    justify-content: center;
+    gap: 22px;
+    margin-top: 40px;
+}
+
+.social-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    color: white;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+}
+
+.social-icon.fb {
+    background-color: #1877f2;
+}
+
+.social-icon.ig {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+
+.social-icon:hover {
+    transform: translateY(-4px) scale(1.05);
+    box-shadow: 0 8px 22px rgba(212, 175, 55, 0.4);
+}
+
+/* Botón flotante de WhatsApp */
+.whatsapp-float {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #25d366;
+    color: white;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+    z-index: 100;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+    background-color: #20ba5a;
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    padding: 25px;
+    font-size: 0.9rem;
+    color: #777777;
+    z-index: 1;
+}
+
+/* Diseño Responsivo para celulares */
+@media (max-width: 768px) {
+    h1 { font-size: 3.2rem; }
+    .tagline { font-size: 1rem; letter-spacing: 6px; }
+    .main-header { padding: 40px 15px 25px; }
+    .glass-card, .services-card { padding: 30px 20px; }
+    .info-item { flex-direction: column; gap: 8px; }
+    .whatsapp-float { width: 60px; height: 60px; font-size: 2.2rem; bottom: 20px; right: 20px; }
+}
