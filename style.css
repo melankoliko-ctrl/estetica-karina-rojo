@@ -13,17 +13,17 @@ body {
     align-items: center;
     position: relative;
     overflow-x: hidden;
+    padding: 40px 0;
 }
 
-/* Fondo elegante con la imagen integrada y velo oscuro de cine */
+/* Fondo oscuro con la imagen */
 .background-overlay {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    /* Asegúrate de que imagen-mujer.png esté en la misma carpeta */
-    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.85)), url('imagen-mujer.png');
+    background: linear-gradient(rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0.88)), url('imagen-mujer.png');
     background-size: cover;
     background-position: center;
     z-index: -1;
@@ -33,7 +33,7 @@ body {
     text-align: center;
     padding: 20px;
     width: 100%;
-    max-width: 600px;
+    max-width: 650px;
     z-index: 1;
 }
 
@@ -44,7 +44,7 @@ body {
 .subtitle {
     font-size: 0.85rem;
     letter-spacing: 4px;
-    color: #d4af37; /* Dorado elegante */
+    color: #d4af37;
     text-transform: uppercase;
     font-weight: 500;
 }
@@ -64,42 +64,64 @@ h1 {
     text-transform: uppercase;
 }
 
-/* Tarjeta central con efecto cristal esmerilado */
-.glass-card {
-    background: rgba(20, 20, 20, 0.65);
+/* Tarjetas con efecto cristal */
+.glass-card, .services-card {
+    background: rgba(20, 20, 20, 0.7);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
-    border: 1px solid rgba(212, 175, 55, 0.3); /* Sutil borde dorado */
+    border: 1px solid rgba(212, 175, 55, 0.3);
     padding: 30px;
     border-radius: 20px;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.glass-card {
+    text-align: center;
 }
 
 .info-item {
-    margin: 20px 0;
+    margin: 18px 0;
     font-size: 1rem;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 15px;
+    line-height: 1.4;
 }
 
-.info-item i {
-    color: #d4af37;
-    font-size: 1.2rem;
+.info-item:first-child {
+    align-items: center;
+}
+
+/* Colores solicitados para los iconos */
+.location-icon {
+    color: #ff4d4d !important; /* Rojo elegante */
+    font-size: 1.3rem;
+    min-width: 20px;
+    text-align: center;
+}
+
+.phone-icon {
+    color: #25d366 !important; /* Verde */
+    font-size: 1.3rem;
+    min-width: 20px;
+    text-align: center;
 }
 
 .info-item a {
     color: #f1f1f1;
     text-decoration: none;
     transition: color 0.3s ease;
+    text-align: left;
 }
 
 .info-item a:hover {
     color: #d4af37;
 }
 
-/* Contenedor de Redes Sociales con colores oficiales reales */
+/* Redes Sociales */
 .social-container {
     display: flex;
     justify-content: center;
@@ -122,16 +144,45 @@ h1 {
 }
 
 .social-icon.fb {
-    background-color: #1877f2; /* Color oficial Facebook */
+    background-color: #1877f2;
 }
 
 .social-icon.ig {
-    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%); /* Gradiente oficial Instagram */
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
 }
 
 .social-icon:hover {
     transform: translateY(-4px);
     box-shadow: 0 6px 15px rgba(212, 175, 55, 0.4);
+}
+
+/* Estilos de la Tarjeta de Servicios */
+.services-card h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6rem;
+    color: #d4af37;
+    text-align: center;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.services-list {
+    list-style: none;
+    padding: 0;
+}
+
+.services-list li {
+    font-size: 1.05rem;
+    margin: 12px 0;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #e0e0e0;
+}
+
+.services-list li i {
+    color: #d4af37;
+    font-size: 0.8rem;
 }
 
 /* Botón flotante de WhatsApp */
