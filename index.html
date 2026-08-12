@@ -3,23 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Karina Rojo Beauty Salón</title>
+    <title>Karina Rojo Beauty Salón | Exclusividad y Tendencia en Culiacán</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="background-overlay"></div>
 
-    <main class="content-container">
-        <div class="brand-header">
-            <span class="subtitle">EXCLUSIVIDAD & TENDENCIA</span>
-            <h1>Karina Rojo</h1>
-            <span class="tagline">Beauty Salón</span>
-        </div>
+    <header class="main-header">
+        <span class="subtitle">ALTA PELUQUERÍA & ESTÉTICA INTEGRAL</span>
+        <h1>Karina Rojo</h1>
+        <span class="tagline">Beauty Salón</span>
+        <p class="intro-text">Resaltamos tu belleza natural con técnicas de vanguardia en un ambiente sofisticado diseñado exclusivamente para ti.</p>
+        
+        <!-- Botón de Llamado a la Acción Principal (CTA) -->
+        <a href="https://wa.me/526671750763?text=Hola%20Karina,%20me%20gustar%C3%ADa%20agendar%20una%20cita%20o%20conocer%20m%C3%A1s%20sobre%20sus%20servicios." class="cta-button" target="_blank">
+            <i class="fa-brands fa-whatsapp"></i> Reserva tu cita por WhatsApp
+        </a>
+    </header>
 
-        <!-- Tarjeta de Contacto y Ubicación -->
-        <div class="glass-card">
+    <main class="content-container">
+        
+        <!-- Sección de Servicios Estrella -->
+        <section class="services-card">
+            <h2>Nuestras Especialidades</h2>
+            <div class="services-grid">
+                <div class="service-item">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    <h3>Colorimetría Avanzada</h3>
+                    <p>Balayage, Babylights y efectos de color personalizados con productos de gama alta.</p>
+                </div>
+                <div class="service-item">
+                    <i class="fa-solid fa-scissors"></i>
+                    <h3>Cortes & Estilo</h3>
+                    <p>Diseño de imagen adaptado a la forma de tu rostro y últimas tendencias globales.</p>
+                </div>
+                <div class="service-item">
+                    <i class="fa-solid fa-spray-can-sparkles"></i>
+                    <h3>Tratamientos Capilares</h3>
+                    <p>Hidratación profunda, nutrición y reconstrucción para un cabello sedoso y brillante.</p>
+                </div>
+                <div class="service-item">
+                    <i class="fa-solid fa-heart-pulse"></i>
+                    <h3>Maquillaje & Peinado</h3>
+                    <p>Luce radiante en tus eventos sociales, bodas y ocasiones especiales.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tarjeta de Ubicación y Contacto Directo -->
+        <section class="glass-card">
+            <h2>Visítanos & Conéctate</h2>
+            
             <div class="info-item">
                 <i class="fa-solid fa-location-dot location-icon"></i> 
                 <a href="https://www.google.com/maps/place/Karina+Rojo+Salon/@24.8212885,-107.394681,17z/data=!3m1!4b1!4m6!3m5!1s0x86bcda1b42893161:0x610025209d2efbc0!8m2!3d24.8212885!4d-107.3921007!16s%2Fg%2F11bwf7y9jp?entry=ttu" target="_blank">
@@ -28,35 +64,27 @@
             
             <div class="info-item">
                 <i class="fa-solid fa-phone phone-icon"></i> 
-                <a href="tel:+526671750763">+52 667 175 0763</a>
+                <a href="tel:+526671750763">+52 667 175 0763 (Llamada directa)</a>
             </div>
             
             <div class="social-container">
-                <a href="https://www.facebook.com/profile.php?id=100063701947159#" target="_blank" class="social-icon fb">
+                <a href="https://www.facebook.com/profile.php?id=100063701947159#" target="_blank" class="social-icon fb" title="Facebook">
                     <i class="fa-brands fa-facebook-f"></i>
                 </a>
-                <a href="https://www.instagram.com/karyroz/" target="_blank" class="social-icon ig">
+                <a href="https://www.instagram.com/karyroz/" target="_blank" class="social-icon ig" title="Instagram">
                     <i class="fa-brands fa-instagram"></i>
                 </a>
             </div>
-        </div>
-
-        <!-- Sección de Servicios Elegantes -->
-        <div class="services-card">
-            <h2>Nuestros Servicios</h2>
-            <ul class="services-list">
-                <li><i class="fa-solid fa-gem"></i> Diseño y Corte de Cabello</li>
-                <li><i class="fa-solid fa-gem"></i> Colorimetría y Mechas (Balayage / Babylights)</li>
-                <li><i class="fa-solid fa-gem"></i> Maquillaje y Peinado Profesional</li>
-                <li><i class="fa-solid fa-gem"></i> Tratamientos Capulares de Hidratación</li>
-                <li><i class="fa-solid fa-gem"></i> Manicure y Pedicure</li>
-            </ul>
-        </div>
+        </section>
     </main>
 
-    <!-- Botón flotante de WhatsApp -->
-    <a href="https://wa.me/526671750763" class="whatsapp-float" target="_blank">
+    <!-- Botón flotante persistente de WhatsApp -->
+    <a href="https://wa.me/526671750763?text=Hola,%20quisiera%20más%20información%20sobre%20sus%20servicios." class="whatsapp-float" target="_blank" title="Chatea con nosotros">
         <i class="fa-brands fa-whatsapp"></i>
     </a>
+
+    <footer>
+        <p>&copy; 2026 Karina Rojo Beauty Salón. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
