@@ -23,7 +23,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(5, 5, 5, 0.82), rgba(5, 5, 5, 0.94)), url('imagen-mujer.png');
+    background: linear-gradient(rgba(5, 5, 5, 0.78), rgba(5, 5, 5, 0.92)), url('imagen-mujer.png');
     background-size: cover;
     background-position: center;
     z-index: -1;
@@ -32,57 +32,64 @@ body {
 /* Encabezado Principal / Hero Section */
 .main-header {
     text-align: center;
-    padding: 60px 20px 30px;
-    max-width: 800px;
+    padding: 70px 20px 40px;
+    max-width: 900px;
     z-index: 1;
 }
 
 .subtitle {
-    font-size: 0.85rem;
-    letter-spacing: 5px;
+    font-size: 0.95rem;
+    letter-spacing: 6px;
     color: #d4af37;
     text-transform: uppercase;
     font-weight: 600;
 }
 
+/* Título principal con proporciones imponentes y elegantes */
 h1 {
     font-family: 'Playfair Display', serif;
-    font-size: 3.5rem;
-    margin: 10px 0 0;
-    letter-spacing: 2px;
+    font-size: 4.8rem;
+    margin: 12px 0 0;
+    letter-spacing: 3px;
     color: #ffffff;
+    line-height: 1.1;
+    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
 }
 
 .tagline {
-    font-size: 1.1rem;
-    letter-spacing: 8px;
+    font-size: 1.25rem;
+    letter-spacing: 10px;
     color: #d1d1d1;
     text-transform: uppercase;
     display: block;
-    margin-bottom: 20px;
-}
-
-.intro-text {
-    font-size: 1.05rem;
-    color: #b5b5b5;
-    line-height: 1.6;
-    margin-bottom: 30px;
+    margin: 10px 0 25px;
     font-weight: 300;
 }
 
-/* Botón de Llamado a la Acción (CTA) de Alto Impacto */
+.intro-text {
+    font-size: 1.15rem;
+    color: #cccccc;
+    line-height: 1.7;
+    margin-bottom: 35px;
+    font-weight: 300;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Botón de Llamado a la Acción (CTA) Principal */
 .cta-button {
     display: inline-flex;
     align-items: center;
     gap: 12px;
     background: linear-gradient(135deg, #25d366, #1ebe5d);
     color: white;
-    padding: 16px 32px;
-    font-size: 1.1rem;
+    padding: 18px 36px;
+    font-size: 1.15rem;
     font-weight: 600;
     border-radius: 50px;
     text-decoration: none;
-    box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
+    box-shadow: 0 10px 30px rgba(37, 211, 102, 0.4);
     transition: all 0.3s ease;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -90,19 +97,19 @@ h1 {
 
 .cta-button:hover {
     transform: translateY(-3px);
-    box-shadow: 0 12px 30px rgba(37, 211, 102, 0.6);
+    box-shadow: 0 15px 35px rgba(37, 211, 102, 0.6);
     background: linear-gradient(135deg, #2ecc71, #25d366);
 }
 
 .cta-button i {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
 }
 
 /* Contenedor General */
 .content-container {
     width: 100%;
-    max-width: 850px;
-    padding: 0 20px 40px;
+    max-width: 900px;
+    padding: 0 20px 50px;
     z-index: 1;
 }
 
@@ -112,33 +119,41 @@ h1 {
     backdrop-filter: blur(14px);
     -webkit-backdrop-filter: blur(14px);
     border: 1px solid rgba(212, 175, 55, 0.25);
-    padding: 40px 30px;
+    padding: 45px 35px;
     border-radius: 24px;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7);
-    margin-bottom: 30px;
+    margin-bottom: 35px;
 }
 
 /* Sección de Servicios en Grid */
 .services-card h2, .glass-card h2 {
     font-family: 'Playfair Display', serif;
-    font-size: 2rem;
+    font-size: 2.3rem;
     color: #d4af37;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     letter-spacing: 1px;
+}
+
+.card-subtitle-text {
+    text-align: center;
+    color: #b5b5b5;
+    font-size: 1.05rem;
+    margin-bottom: 30px;
+    font-weight: 300;
 }
 
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
 }
 
 .service-item {
     background: rgba(255, 255, 255, 0.03);
-    padding: 25px 20px;
-    border-radius: 16px;
-    border: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 30px 25px;
+    border-radius: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.06);
     transition: transform 0.3s ease, border-color 0.3s ease;
 }
 
@@ -148,28 +163,28 @@ h1 {
 }
 
 .service-item i {
-    font-size: 1.8rem;
+    font-size: 2rem;
     color: #d4af37;
     margin-bottom: 15px;
 }
 
 .service-item h3 {
-    font-size: 1.15rem;
+    font-size: 1.25rem;
     margin-bottom: 10px;
     color: #ffffff;
     font-weight: 500;
 }
 
 .service-item p {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     color: #b0b0b0;
-    line-height: 1.5;
+    line-height: 1.6;
 }
 
 /* Elementos de Contacto e Info */
 .info-item {
-    margin: 20px 0;
-    font-size: 1.05rem;
+    margin: 22px 0;
+    font-size: 1.1rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -180,12 +195,12 @@ h1 {
 /* Colores personalizados solicitados */
 .location-icon {
     color: #ff4d4d !important; /* Rojo elegante */
-    font-size: 1.4rem;
+    font-size: 1.5rem;
 }
 
 .phone-icon {
     color: #25d366 !important; /* Verde */
-    font-size: 1.4rem;
+    font-size: 1.5rem;
 }
 
 .info-item a {
@@ -202,18 +217,18 @@ h1 {
 .social-container {
     display: flex;
     justify-content: center;
-    gap: 20px;
-    margin-top: 35px;
+    gap: 22px;
+    margin-top: 40px;
 }
 
 .social-icon {
-    width: 55px;
-    height: 55px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     color: white;
     text-decoration: none;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -230,7 +245,7 @@ h1 {
 
 .social-icon:hover {
     transform: translateY(-4px) scale(1.05);
-    box-shadow: 0 8px 20px rgba(212, 175, 55, 0.4);
+    box-shadow: 0 8px 22px rgba(212, 175, 55, 0.4);
 }
 
 /* Botón flotante de WhatsApp */
@@ -240,13 +255,13 @@ h1 {
     right: 30px;
     background-color: #25d366;
     color: white;
-    width: 65px;
-    height: 65px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 2.3rem;
+    font-size: 2.5rem;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
     z-index: 100;
     transition: transform 0.3s ease, background-color 0.3s ease;
@@ -261,16 +276,18 @@ h1 {
 /* Pie de página */
 footer {
     text-align: center;
-    padding: 20px;
-    font-size: 0.85rem;
+    padding: 25px;
+    font-size: 0.9rem;
     color: #777777;
     z-index: 1;
 }
 
 /* Diseño Responsivo para celulares */
-@media (max-width: 600px) {
-    h1 { font-size: 2.6rem; }
-    .main-header { padding: 40px 15px 20px; }
-    .glass-card, .services-card { padding: 25px 15px; }
+@media (max-width: 768px) {
+    h1 { font-size: 3.2rem; }
+    .tagline { font-size: 1rem; letter-spacing: 6px; }
+    .main-header { padding: 40px 15px 25px; }
+    .glass-card, .services-card { padding: 30px 20px; }
     .info-item { flex-direction: column; gap: 8px; }
+    .whatsapp-float { width: 60px; height: 60px; font-size: 2.2rem; bottom: 20px; right: 20px; }
 }
